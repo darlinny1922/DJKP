@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DJKP :)</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="jkjm.css">
+   <link rel="icon" href="iconsyimagenes/jk2.ico">
+</head>
+<body>
+
+   <header>
+    <a href="#" class="brand">DJKP</a>
+    <nav class="menu">
+      <div class="btn">
+        <i class="fas fa-times close-btn"></i>
+      </div>
+      <ul>
+          <li><a href="index.html">Inicio</a></li> 
+          <li><a href="vistauno.html">DJKP</a></li>
+          <li><a href="musi.html">Música</a></li>
+          <li><a href="imageyvide.html">Videos</a></li>
+          <li><a href="index.html">Cerrar Sesion</a></li>
+      </ul>
+    </nav>
+    <div class="btn">
+      <i class="fas fa-bars menu-btn"></i>
+    </div>
+  </header>
+
+
+  <section class="section-main">
+    <h1>DJKP</h1>
+  </section>
+
+  <div class="container">
+		<div class="main-video-container">
+			<video src="iconsyimagenes/puseidi.mp4" loop controls class="main-video"></video>
+			<h3 class="main-vid-title">Feliz Cumpleaños pusei te quiero mucho</h3>
+		</div>
+		<div class="video-list-container" id="videosList"></div>
+	</div>
+
+	<script src="jkjm.js"></script>
+
+  <script type="text/javascript">
+  //javascript for navigation bar effect on scroll
+  window.addEventListener("scroll", function(){
+    var header = document.querySelector("header");
+    header.classList.toggle('down', window.scrollY > 0);
+
+      //change logo
+      var logo = document.querySelector(".brand img");
+      if (window.scrollY>0) {
+          logo.setAttribute('src', 'image/white.png');
+      }else{
+          logo.setAttribute('src', 'image/blue.png');
+      }
+
+  });
+
+  //javascript for responsive navigation sidebar menu
+  var menu = document.querySelector('.menu');
+  var menuBtn = document.querySelector('.menu-btn');
+  var closeBtn = document.querySelector('.close-btn');
+
+  menuBtn.addEventListener("click", () => {
+    menu.classList.add('active');
+  });
+
+  closeBtn.addEventListener("click", () => {
+    menu.classList.remove('active');
+  });
+  </script>
+</body>
+</html>
+   

@@ -1,0 +1,74 @@
+.{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+
+body{
+    
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: weight;
+      font-style: normal;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-image: url(iconsyimagenes/Weverse_52e25.jpg );
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+     
+}
+
+form{
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      width: 400px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      border-radius: 15px;
+      background-color: #eeeeee;
+}
+
+h2{
+      text-align: center;
+      font-size: 30px;
+      text-transform: uppercase;
+      color: black;
+      margin-bottom: 25px;
+}
+
+label, p {
+      font-size: 17px;
+      color: #575757;
+      margin-bottom: 10px;
+
+}
+
+input{
+      padding: 17px 11px;
+      border: 1px solid #B692C2;
+      border-radius: 25px;
+      margin-bottom: 25px;
+      background-color: #fafafc;
+      outline: none;
+      color: black;
+      font-size: 17px;
+
+}
+
+.btn-1{
+      background-color: #B692C2;
+      font-size: 15px;
+      color: black;
+      text-transform: uppercase;
+      cursor: pointer;
+
+}
+
+.btn-1:hover {
+      background-color: #674188;
+}
+

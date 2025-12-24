@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DJKP :)</title>
+  <bgsound src="iconsyimagenes/importante.ogg.ogg" autoplay loop="infinite"></bgsound>
+   <bgsound src="iconsyimagenes/importante.mp3" autoplay loop="infinite"></bgsound>  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="vistauno.css">
+   <link rel="icon" href="iconsyimagenes/jk2.ico">
+</head>
+
+<body>
+
+	
+	<header>
+    <a href="#" class="brand">DJKP</a>
+    <nav class="menu">
+      <div class="btn">
+        <i class="fas fa-times close-btn"></i>
+      </div>
+      <ul>
+          <li><a href="index.html">Inicio</a></li> 
+          <li><a href="vistauno.html">DJKP</a></li>
+          <li><a href="musi.html">Música</a></li>
+          <li><a href="imageyvide.html">Videos</a></li>
+          <li><a href="index.html">Cerrar Sesion</a></li>
+      </ul>
+    </nav>
+    <div class="btn">
+      <i class="fas fa-bars menu-btn"></i>
+    </div>
+  </header>
+
+  
+	  <section class="section-two">
+    <div class="letter-container">
+        <div class="letter-header">
+            <h2>Para: La mejor Jungkookista <span class="purple-heart">💜</span></h2>
+            <p class="date">4:00 AM | Programado con cariño</p>
+        </div>
+
+        <div class="letter-body">
+            <p>Holi(no se que poner xd)</p>
+            
+            <p>Bueno feliz cumpleaños pusei este es un regalo que hice con bastante esfuerzo creo que no vas a tener un regalo asi xd. Estoy segura de que no vas a tener otro regalo igual, porque este tiene código, desvelos y mucho lore incluido.</p>
+
+            <p>Diseñé esta página especialmente para cuando extrañes a <strong>Jungkook</strong>. Es tu propio espacio personal (funciona mejor con internet, <em>sorry</em>) donde tienes sus videos, su música y algunos detalles míos que quise agregar para que fuera único.</p>
+
+            <hr class="divider">
+
+            <h3>El Lore de DJKP</h3>
+            <p>Quizás te preguntes qué significa el nombre. <strong>DJKP</strong> son las siglas del proyecto: <strong>Diana, Jungkook, Proyecto</strong>. Se me ocurrió mientras estaba peleando con el código a mitad de la noche y me encantó cómo sonaba.</p>
+
+            <p>Como verás en el menú superior, tienes tres secciones principales. La primera es esta carta para ti; la segunda es de <strong>Música</strong> (dale play y disfruta, obvie); y la tercera es de <strong>Videos</strong>.  definitivamente la de videos es mi favorita, elegí cada uno con mucho cuidado pensando en lo que te gusta... ¡ya verás por qué!</p>
+
+            <hr class="divider">
+
+            <p>Llevaba tiempo queriendo hacerte algo así. Como dice mi profe de programación: <em>"Si lo puedes imaginar, lo puedes programar"</em>. Y aquí está, es <strong>responsive</strong> (se ve bien en el cel) y tengo toda la fe de que pronto estará en internet para que la veas cuando quieras.</p>
+            
+            <p>Si alguna vez quieres cambiar una canción, agregar un video nuevo o ajustar algo, solo dime. Estoy a tus órdenes para mantener este rincón de JK perfecto para ti.</p>
+
+            <div class="proof-section">
+                <p class="small-text">Eran casi las 4 de la mañana cuando terminé esto, con la realidad bien alterada pero valió la pena. Adjunto pruebas del proceso:</p>
+                <img src="iconsyimagenes/adjuntoprubeas.jpg" alt="Pruebas de desvelo" class="letter-img">
+            </div>
+        </div>
+
+        <div class="letter-footer">
+            <p>En fin, te quiero mucho. ¡Disfruta tu página!</p>
+            <p class="signature">Atentamente: Darlin la pusei</p>
+        </div>
+    </div>
+</section>
+
+	  <script src="rodriguez.js"></script>
+	  <script type="text/javascript">
+	  //javascript for navigation bar effect on scroll
+	  window.addEventListener("scroll", function(){
+		var header = document.querySelector("header");
+		header.classList.toggle('down', window.scrollY > 0);
+  
+		  //change logo
+		  var logo = document.querySelector(".brand img");
+		  if (window.scrollY>0) {
+			  logo.setAttribute('src', 'image/white.png');
+		  }else{
+			  logo.setAttribute('src', 'image/blue.png');
+		  }
+  
+	  });
+  
+	  //javascript for responsive navigation sidebar menu
+	  var menu = document.querySelector('.menu');
+	  var menuBtn = document.querySelector('.menu-btn');
+	  var closeBtn = document.querySelector('.close-btn');
+  
+	  menuBtn.addEventListener("click", () => {
+		menu.classList.add('active');
+	  });
+  
+	  closeBtn.addEventListener("click", () => {
+		menu.classList.remove('active');
+	  });
+	  </script>
+</body>
+</html>

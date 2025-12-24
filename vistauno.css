@@ -1,0 +1,193 @@
+/* 1. CONFIGURACIÓN GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: #B692C2;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* 2. HEADER Y NAVEGACIÓN */
+header {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  transition: 0.6s;
+}
+
+header.down {
+  background: #674188;
+  padding: 15px 80px;
+}
+
+header .brand {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+header .menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+header .menu a {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0 20px;
+  padding: 5px 15px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+header .menu a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+header .btn {
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+/* 3. SECCIÓN PORTADA (BANNER) */
+.section-main {
+  position: relative;
+  width: 100%;
+  min-height: 80vh; /* Bajamos un poco la altura para que la carta se vea antes */
+  background: url(iconsyimagenes/jkflorecitapele.jpeg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 80px;
+}
+
+.section-main h1 {
+  color: #536493;
+  font-size: 70px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
+
+/* 4. SECCIÓN CARTA (CONTENEDOR MEJORADO) */
+.section-two {
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.letter-container {
+  background: #fff;
+  max-width: 850px;
+  padding: 60px;
+  border-radius: 5px;
+  box-shadow: 15px 15px 0px #674188; /* Sombra estilo retro/carta */
+  position: relative;
+  border-top: 8px solid #8C3061;
+}
+
+/* Títulos y texto dentro de la carta */
+.letter-container h2 {
+  color: #674188;
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  border-bottom: 2px dashed #B692C2;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.letter-container h1 {
+  font-size: 1.5rem;
+  color: #8C3061;
+  margin: 30px 0 15px;
+}
+
+.letter-container p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.letter-container b {
+  color: #674188;
+}
+
+/* Imagen de "pruebas" dentro de la carta */
+.letter-container img {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: 30px auto;
+  border-radius: 10px;
+  border: 5px solid #f9f9f9;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* 5. RESPONSIVE */
+@media (max-width: 991px) {
+  header, header.down {
+    padding: 20px 40px;
+  }
+  header .btn {
+    display: block;
+  }
+  header .menu {
+    position: fixed;
+    background: #674188;
+    min-width: 300px;
+    height: 100vh;
+    top: 0;
+    right: -100%;
+    padding: 80px 40px;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  header .menu.active {
+    right: 0;
+  }
+  header .menu ul {
+    flex-direction: column;
+  }
+  header .menu a {
+    margin: 15px 0;
+    font-size: 20px;
+  }
+  .letter-container {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-main h1 {
+    font-size: 45px;
+  }
+  .letter-container h2 {
+    font-size: 1.6rem;
+  }
+}
