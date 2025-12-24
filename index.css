@@ -5,21 +5,17 @@
 }
 
 
-body{
-    
-      font-family: "Montserrat", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: weight;
-      font-style: normal;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      background-image: url(iconsyimagenes/Weverse_52e25.jpg );
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover;
-     
+body {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* QUITADO EL ESPACIO al final del .jpg */
+    background-image: url(iconsyimagenes/Weverse_52e25.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 form{

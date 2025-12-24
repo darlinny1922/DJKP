@@ -2,7 +2,7 @@ const videosList = [
     { video: 'iconsyimagenes/woonega.mp4', title: 'Jungkook tu esposo' },
     { video: 'iconsyimagenes/geiiiijk.mp4', title: 'Literalmente el amor de tu vida' },
     { video: 'iconsyimagenes/jkcuchi.mp4', title: 'Lo mas bonito que tienes en tu vida' },
-    { video: 'iconsyimagenes/jkfe.mp4', title: 'Jungkook pelo moradito porque si para que la vida sea mas bonita y porque te lo mereces' },
+    { video: 'iconsyimagenes/jkfe.mp4', title: 'Jungkook pelo moradito porque si para que la vida sea mas bonita y porque te lo mereces💜' },
     { video: 'iconsyimagenes/gei.mp4', title: 'Jk' },
     { video: 'iconsyimagenes/jkere.mp4', title: 'Jungkook simplemente devoro' },
     { video: 'iconsyimagenes/jeikei.mp4', title: 'alto tema' },
